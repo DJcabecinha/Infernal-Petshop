@@ -192,14 +192,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1679265116501870570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6fddf062d359c4cbb67a72ef74008f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e47538c3a6ea1746a3fb4f83a1ea740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 100
-  animalName: Dog
-  animalPrefab: {fileID: 3864297072312443028, guid: 2b87ed5cf61f4a3499c719a7901ec4e4,
-    type: 3}
-  animalNameText: {fileID: 8385371443283546630}
+  cost: 0
+  animalName: 
+  animalPrefab: {fileID: 0}
+  animalNameText: {fileID: 0}
 --- !u!114 &510759003862907967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,11 +950,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7298130377771704985}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7bad09bf863234689e697b9ced059d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b5a051c9aab47d43b27278501f94d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 10000
-  moneyText: {fileID: 1013726272740496859}
+  money: 0
+  moneyText: {fileID: 0}
 --- !u!1 &7548965899832625885
 GameObject:
   m_ObjectHideFlags: 0
