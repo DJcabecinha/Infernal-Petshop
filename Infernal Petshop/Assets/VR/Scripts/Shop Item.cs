@@ -23,7 +23,7 @@ public class ShopItem : MonoBehaviour
 
     public void Buy()
     {
-        if (Currency.currency.Money > cost)
+        if (Currency.currency.Money >= cost)
         {
             Currency.currency.Money -= cost;
             Instantiate(animalPrefab, spawnPoint.position, Quaternion.identity);
