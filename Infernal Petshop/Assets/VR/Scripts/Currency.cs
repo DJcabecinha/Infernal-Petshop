@@ -14,7 +14,7 @@ public class Currency : MonoBehaviour
         {
             money = value;
             if (money < 0) money = 0;
-            moneyText.text = "$$: " + money.ToString();
+            moneyText.text = "$: " + money.ToString();
         }
     }
 
