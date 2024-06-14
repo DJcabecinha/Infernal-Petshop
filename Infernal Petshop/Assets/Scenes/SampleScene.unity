@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08677211, g: 0.0057836734, b: 0.0027742216, a: 1}
+  m_IndirectSpecularColor: {r: 0.0867721, g: 0.0057836752, b: 0.0027742242, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2574,7 +2574,7 @@ Transform:
   m_GameObject: {fileID: 860281818}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0.238}
+  m_LocalPosition: {x: 0, y: 0.585, z: 0.162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2974,6 +2974,79 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
+--- !u!1001 &955958622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2539968791027326956, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.953
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.0187244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224236804265391395, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8409979989838169599, guid: 70f0306718bbbf247ab294fad4b3cd2b,
+        type: 3}
+      propertyPath: m_Name
+      value: Gato 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70f0306718bbbf247ab294fad4b3cd2b, type: 3}
 --- !u!1 &964206924
 GameObject:
   m_ObjectHideFlags: 0
@@ -5237,7 +5310,7 @@ Transform:
   m_GameObject: {fileID: 1704166991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.222, y: 0, z: -2.279}
+  m_LocalPosition: {x: 0.222, y: -0.012, z: -2.279}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6076,6 +6149,7 @@ GameObject:
   - component: {fileID: 1833128132}
   - component: {fileID: 1833128134}
   - component: {fileID: 1833128133}
+  - component: {fileID: 1833128135}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -6453,6 +6527,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_PhysicsTriggerInteraction: 1
+--- !u!114 &1833128135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833128126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89cbbbdf7f337064a8836ece6d776154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopButton: {fileID: 1916767218}
 --- !u!1 &1881253684
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +6692,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881253684}
   m_CullTransparentMesh: 1
+--- !u!1 &1916767218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7719443714432219240, guid: 5649b9e60a1d7b34d868a49ac0b32d2b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501591738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1955790123
 GameObject:
   m_ObjectHideFlags: 0
@@ -7954,3 +8047,4 @@ SceneRoots:
   - {fileID: 760698913}
   - {fileID: 1501591738}
   - {fileID: 1119774542}
+  - {fileID: 955958622}

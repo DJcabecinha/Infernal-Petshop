@@ -1745,6 +1745,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   myConnection: {fileID: 7039323760956566302}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!136 &206421648625337943
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2209,6 +2211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   myConnection: {fileID: 4107424316243305300}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!136 &5041059613697861604
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3197,6 +3201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 3
   myConnection: {fileID: 8946376546568642063}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!136 &1572555070201155605
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4107,6 +4113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   myConnection: {fileID: 5312524150680029552}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!136 &7823132010840392708
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4964,6 +4972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   myConnection: {fileID: 531886750598437096}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!136 &3317743298386705699
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5796,7 +5806,7 @@ GameObject:
   - component: {fileID: 7224236804265391395}
   m_Layer: 0
   m_Name: Gato 2
-  m_TagString: Untagged
+  m_TagString: Animais
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5969,6 +5979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myType: 0
   myConnection: {fileID: 5914058109721569327}
+  characterJoint: {fileID: 0}
+  test: 0
 --- !u!135 &1527462188185881398
 SphereCollider:
   m_ObjectHideFlags: 0

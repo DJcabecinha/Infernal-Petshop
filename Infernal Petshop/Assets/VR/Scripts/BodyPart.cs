@@ -1,7 +1,10 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class BodyPart : MonoBehaviour 
 {
@@ -10,19 +13,6 @@ public class BodyPart : MonoBehaviour
     public CharacterJoint characterJoint;
     public bool test;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A) && test)
-        {
-            DisconnectJoint();
-            print("A");
-        }
-        if (Input.GetKeyDown(KeyCode.S) && test)
-        {
-            print("S");
-            ConnectJoint();
-        }
-    }
     public void DisconnectJoint()
     {
         if (myConnection != null)
