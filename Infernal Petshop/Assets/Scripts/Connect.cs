@@ -12,13 +12,15 @@ public class Connect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bodyPart = GameObject.FindGameObjectWithTag("Animais").GetComponent<BodyPart>();
+        bodyPart = GetComponent<BodyPart>();
         if (Input.GetKeyDown(KeyCode.Joystick1Button0))
         {
+            shopButton.SetActive(false);
             bodyPart.ConnectJoint();
         }
         if (Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
+            shopButton.SetActive(true);
             bodyPart.DisconnectJoint();
         }
     }
