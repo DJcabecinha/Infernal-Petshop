@@ -8,10 +8,12 @@ using UnityEngine.InputSystem;
 
 public class BodyPart : MonoBehaviour 
 {
-    public Connection.ConnectionType myType;
+    public Connection.ConnectionType bodyPartType;
     public Connection myConnection;
+    public Connection.AnimalType animalType;
+
     public CharacterJoint characterJoint;
-    public bool test;
+    public int myValue;
 
     public void DisconnectJoint()
     {
@@ -24,24 +26,14 @@ public class BodyPart : MonoBehaviour
     }
     public void ConnectJoint()
     {
-        print("1");
-
         if (myConnection == null)
         {
-            print("2");
-
             foreach (Connection con in ConnectionManager.Instance.connections)
             {
-                print("3");
-
                 if (Vector3.Distance(con.transform.position, transform.position) <= ConnectionManager.Instance.connectionDistance)
                 {
-                    print("4");
-
                     if (con.myConnector == null)
                     {
-                        print("5");
-
                         characterJoint = gameObject.AddComponent(typeof(CharacterJoint)) as CharacterJoint;
 
                         characterJoint.connectedBody = con.gameObject.GetComponent<Rigidbody>();

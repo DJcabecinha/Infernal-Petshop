@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 2
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &1635960009200515041
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -120,7 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 0
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &8366021630184571695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,7 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 0
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &2485418252662693980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -268,7 +274,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 3
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &2875541323363810430
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -342,7 +350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 0
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &1890553130480268119
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -416,7 +426,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectionType: 0
+  animalType: 0
   myConnector: {fileID: 0}
+  myBody: {fileID: 0}
 --- !u!54 &9099823175236816744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -575,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3477ec14f431c4982397a9f1c1369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myValue: 250
+  bodyValue: 75
 --- !u!136 &5459105079909509013
 CapsuleCollider:
   m_ObjectHideFlags: 0

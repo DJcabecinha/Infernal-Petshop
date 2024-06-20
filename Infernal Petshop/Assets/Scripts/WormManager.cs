@@ -8,10 +8,14 @@ public class WormManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.GetComponent<MainBody>() != null)
-        {
-            MainBody body = other.gameObject.GetComponent<MainBody>();
-            Currency.currency.Money += body.myValue;
+        {     
             animator.SetTrigger("Chomp");
+            MainBody body = other.gameObject.GetComponent<MainBody>();
+
+            Currency.instance.Money += body.bodyValue;
+
+            ObjectiveManager.instance.CheckObjective(body.currentPresentAnimals, body.currentPresentParts);
+
             Destroy(body.gameObject, 2);
         }
     }

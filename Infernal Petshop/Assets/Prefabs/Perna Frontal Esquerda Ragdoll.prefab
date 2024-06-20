@@ -134,10 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cf21c08e469194bb6d724439a8a05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myType: 0
+  bodyPartType: 0
   myConnection: {fileID: 0}
+  animalType: 0
   characterJoint: {fileID: 0}
-  test: 1
+  myValue: 50
 --- !u!54 &6010052840016583991
 Rigidbody:
   m_ObjectHideFlags: 0
