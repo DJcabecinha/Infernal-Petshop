@@ -58,6 +58,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2561676000311499150, guid: 1e92ac340e64a9346bf6363f2cfa9d2d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.367
+      objectReference: {fileID: 0}
+    - target: {fileID: -2561676000311499150, guid: 1e92ac340e64a9346bf6363f2cfa9d2d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.61
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e92ac340e64a9346bf6363f2cfa9d2d,
         type: 3}
       propertyPath: m_Name
@@ -107,11 +117,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cf21c08e469194bb6d724439a8a05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartType: 0
+  bodyPartType: 2
   myConnection: {fileID: 0}
   animalType: 0
   characterJoint: {fileID: 0}
   myValue: 50
+  selected: 0
 --- !u!54 &1541371847978890780
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -210,10 +221,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5890212910370707048}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5890212910370707048}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

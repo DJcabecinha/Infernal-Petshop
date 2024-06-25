@@ -129,6 +129,7 @@ MonoBehaviour:
   animalType: 0
   characterJoint: {fileID: 0}
   myValue: 50
+  selected: 0
 --- !u!136 &7140517806095101710
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -229,10 +230,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7237705330795639669}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7237705330795639669}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

@@ -2,26 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class Connect : MonoBehaviour
 {
-    private BodyPart bodyPart;
-    public GameObject shopButton;
-
-    // Update is called once per frame
+    public GameObject instantiat;
+  
+    public List<BodyPart> bodyParts = new List<BodyPart>();
+    public InputActionReference connectInput;
+    public InputActionReference disconnectInput;
     void Update()
     {
-        bodyPart = GetComponent<BodyPart>();
-        if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+
+        if (connectInput.ToInputAction().triggered)
         {
-            shopButton.SetActive(false);
-            bodyPart.ConnectJoint();
+            Debug.Log("PRESSED 1");
+            //Instantiate(instantiat, transform.position, Quaternion.identity);
+            
+            foreach (BodyPart part in bodyParts)
+            {
+                part.ConnectJoint();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
+        
+         
+        if (disconnectInput.ToInputAction().triggered)
         {
-            shopButton.SetActive(true);
-            bodyPart.DisconnectJoint();
+            Debug.Log("PRESSED 2");
+
+            //Instantiate(instantiat, transform.position, Quaternion.identity);
+            
+            foreach (BodyPart part in bodyParts)
+            {
+                part.DisconnectJoint();
+            }
         }
     }
 }

@@ -14,11 +14,18 @@ public class BodyPart : MonoBehaviour
 
     public CharacterJoint characterJoint;
     public int myValue;
+    public bool selected;
 
+    private void Start()
+    {
+        FindObjectOfType<Connect>().bodyParts.Add(this);
+    }
     public void DisconnectJoint()
     {
+        Debug.Log("Disconnecting");
         if (myConnection != null)
         {
+            Debug.Log('2');
             Destroy(characterJoint);
             myConnection.Disconnect(this);
             myConnection = null;
@@ -26,14 +33,20 @@ public class BodyPart : MonoBehaviour
     }
     public void ConnectJoint()
     {
+        if (!selected) return;
+
+        Debug.Log("connecting");
         if (myConnection == null)
         {
+            Debug.Log('2');
             foreach (Connection con in ConnectionManager.Instance.connections)
             {
                 if (Vector3.Distance(con.transform.position, transform.position) <= ConnectionManager.Instance.connectionDistance)
                 {
+                    Debug.Log('4');
                     if (con.myConnector == null)
                     {
+                        Debug.Log('5');
                         characterJoint = gameObject.AddComponent(typeof(CharacterJoint)) as CharacterJoint;
 
                         characterJoint.connectedBody = con.gameObject.GetComponent<Rigidbody>();
@@ -45,5 +58,9 @@ public class BodyPart : MonoBehaviour
                 }
             }
         }
+    }
+    public void Selected(bool condition)
+    {
+        selected = condition;
     }
 }
