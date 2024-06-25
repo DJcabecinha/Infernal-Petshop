@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private float totalTimeInSeconds = 120f;
     [SerializeField] private TextMeshProUGUI timerText;
     private float timeRemaining;
+    private bool timeout;
 
     void Start()
     {
@@ -17,12 +18,14 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (timeRemaining > 0)
+        if (timeRemaining > 0 && !timeout)
         {
             timeRemaining -= Time.deltaTime;
-            if (timeRemaining < 0)
+            if (timeRemaining <= 0)
             {
                 timeRemaining = 0;
+                ObjectiveManager.instance.TimeOut();
+                timeout = true;
             }
             UpdateTimerText();
         }

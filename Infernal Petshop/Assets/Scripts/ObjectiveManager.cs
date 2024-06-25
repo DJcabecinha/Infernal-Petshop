@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class ObjectiveManager : MonoBehaviour
     [SerializeField] private Objective[] objectives;
     [SerializeField] private TextMeshProUGUI objectiveText;
     public Objective currentObjective;
+
+    [SerializeField] private GameObject endgameScreen;
+    [SerializeField] private TextMeshProUGUI endgameText;
 
     private void Awake()
     {
@@ -43,8 +47,22 @@ public class ObjectiveManager : MonoBehaviour
 
         if (currentObjective.CheckObjective(Currency.instance.Money, presentAnimals, presentParts))
         {
-            print("Game Won");
+            endgameScreen.SetActive(true);
+            endgameText.text = "VITÓRIA";
+            Time.timeScale = 0;
         }
 
+    }
+    public void TimeOut()
+    {
+        endgameScreen.SetActive(true);
+        endgameText.text = "DERROTA";
+        Time.timeScale = 0;
+    }
+    public void ReloadGame()
+    {
+        Time.timeScale = 1;
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 }
