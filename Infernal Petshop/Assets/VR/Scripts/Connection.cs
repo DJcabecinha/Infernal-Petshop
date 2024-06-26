@@ -23,9 +23,11 @@ public class Connection : MonoBehaviour
     }
     public AnimalType animalType;
 
-    public BodyPart myConnector;
-    public MainBody myBody;
+    private BodyPart myConnector;
+    private MainBody myBody;
   
+    public BodyPart MyConnector { get { return myConnector; } }   
+
     private void Start()
     {
         myBody = GetComponentInParent<MainBody>();

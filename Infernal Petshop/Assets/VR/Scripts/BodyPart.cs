@@ -9,12 +9,12 @@ using UnityEngine.InputSystem;
 public class BodyPart : MonoBehaviour 
 {
     public Connection.ConnectionType bodyPartType;
-    public Connection myConnection;
+    private Connection myConnection;
     public Connection.AnimalType animalType;
 
-    public CharacterJoint characterJoint;
+    private CharacterJoint characterJoint;
     public int myValue;
-    public bool selected;
+    private bool selected;
 
     private void Start()
     {
@@ -44,7 +44,7 @@ public class BodyPart : MonoBehaviour
                 if (Vector3.Distance(con.transform.position, transform.position) <= ConnectionManager.Instance.connectionDistance)
                 {
                     Debug.Log('4');
-                    if (con.myConnector == null)
+                    if (con.MyConnector == null)
                     {
                         Debug.Log('5');
                         characterJoint = gameObject.AddComponent(typeof(CharacterJoint)) as CharacterJoint;
