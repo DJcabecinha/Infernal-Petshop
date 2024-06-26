@@ -8,17 +8,19 @@ public class ShopItem : MonoBehaviour
 
     [Header("Info")]
     [SerializeField] private int cost;
-    [SerializeField] private string animalName;
+    //[SerializeField] private string animalName;
 
     [Header("Objects")]
     [SerializeField] private GameObject animalPrefab;
     [SerializeField] private TextMeshProUGUI animalNameText;
+    [SerializeField] private TextMeshProUGUI animalCostText;
 
     private Transform spawnPoint;
     private void Start()
     {
         spawnPoint = GameObject.FindGameObjectWithTag("Shop Spawn Point").transform;
-        animalNameText.text = animalName;
+        animalNameText.text = animalPrefab.name;
+        animalCostText.text = "$: " + cost;
     }
 
     public void Buy()
