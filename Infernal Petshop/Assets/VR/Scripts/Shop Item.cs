@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour
 {
@@ -14,13 +15,15 @@ public class ShopItem : MonoBehaviour
     [SerializeField] private GameObject animalPrefab;
     [SerializeField] private TextMeshProUGUI animalNameText;
     [SerializeField] private TextMeshProUGUI animalCostText;
-
+    [SerializeField] private Sprite icon;
+    [SerializeField] private Image image;
     private Transform spawnPoint;
     private void Start()
     {
         spawnPoint = GameObject.FindGameObjectWithTag("Shop Spawn Point").transform;
         animalNameText.text = animalPrefab.name;
         animalCostText.text = "$: " + cost;
+        image.sprite = icon;
     }
 
     public void Buy()

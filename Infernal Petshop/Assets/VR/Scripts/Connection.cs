@@ -20,6 +20,7 @@ public class Connection : MonoBehaviour
     {
         cat,
         reptile,
+        dog,
     }
     public AnimalType animalType;
 
