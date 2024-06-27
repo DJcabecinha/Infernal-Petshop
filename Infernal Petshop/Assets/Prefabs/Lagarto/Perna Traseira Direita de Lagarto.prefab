@@ -96,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 992521fe01d2f4c49a90cb9de21cf1e5,
         type: 3}
       propertyPath: m_Name
-      value: Perna Traseira Direita Lagarto
+      value: Perna Traseira Direita de Lagarto
       objectReference: {fileID: 0}
     - target: {fileID: 4490843669082607466, guid: 992521fe01d2f4c49a90cb9de21cf1e5,
         type: 3}
@@ -257,11 +257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPartType: 0
-  myConnection: {fileID: 0}
   animalType: 1
-  characterJoint: {fileID: 0}
   myValue: 50
-  selected: 0
 --- !u!136 &6902317948869978719
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -362,10 +359,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5550006867222137588}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5550006867222137588}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []

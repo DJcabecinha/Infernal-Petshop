@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca4875be6292ee840b9ac87e856e959e,
         type: 3}
       propertyPath: m_Name
-      value: Perna Traseira Esquerda Lagarto
+      value: Perna Traseira Esquerda de Lagarto
       objectReference: {fileID: 0}
     - target: {fileID: 5417112809071705544, guid: ca4875be6292ee840b9ac87e856e959e,
         type: 3}
@@ -140,11 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPartType: 0
-  myConnection: {fileID: 0}
   animalType: 0
-  characterJoint: {fileID: 0}
   myValue: 50
-  selected: 0
 --- !u!136 &592272724873418584
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -246,7 +243,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4927590351364766925}
         m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
         m_MethodName: Selected
         m_Mode: 6
@@ -261,7 +258,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4927590351364766925}
         m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
         m_MethodName: Selected
         m_Mode: 6
