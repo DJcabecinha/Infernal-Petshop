@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 38e22cf5feff91a4683291d3dac7b49e,
         type: 3}
       propertyPath: m_Name
-      value: Rabo Ragdoll
+      value: Rabo de Gato
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 38e22cf5feff91a4683291d3dac7b49e,
         type: 3}
@@ -228,8 +228,8 @@ Rigidbody:
   m_GameObject: {fileID: 2723067135285592477}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -330,8 +330,8 @@ Rigidbody:
   m_GameObject: {fileID: 2822341053918142162}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -413,11 +413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPartType: 3
-  myConnection: {fileID: 0}
   animalType: 0
-  characterJoint: {fileID: 0}
   myValue: 50
-  selected: 0
 --- !u!136 &8010210752920492028
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -682,8 +679,8 @@ Rigidbody:
   m_GameObject: {fileID: 3882090172015784510}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -784,8 +781,8 @@ Rigidbody:
   m_GameObject: {fileID: 6557963243913941274}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -886,8 +883,8 @@ Rigidbody:
   m_GameObject: {fileID: 6781544848672147432}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -988,8 +985,8 @@ Rigidbody:
   m_GameObject: {fileID: 7193017062018476381}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1090,8 +1087,8 @@ Rigidbody:
   m_GameObject: {fileID: 7584051331651047744}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1192,8 +1189,8 @@ Rigidbody:
   m_GameObject: {fileID: 8308493074013069752}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
