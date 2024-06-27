@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5758942c0acd67843856499737a221ba,
         type: 3}
       propertyPath: m_Name
-      value: Rabo de Lagarto
+      value: Rabo Lagarto
       objectReference: {fileID: 0}
     - target: {fileID: 4056513574283268919, guid: 5758942c0acd67843856499737a221ba,
         type: 3}
@@ -533,8 +533,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPartType: 3
+  myConnection: {fileID: 0}
   animalType: 1
+  characterJoint: {fileID: 0}
   myValue: 50
+  selected: 0
 --- !u!136 &1819076350185686600
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -635,34 +638,10 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 623867608704735817}
-        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
-        m_MethodName: Selected
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 623867608704735817}
-        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
-        m_MethodName: Selected
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
