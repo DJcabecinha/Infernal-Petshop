@@ -7,8 +7,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Collider))]
 public class BodyPart : MonoBehaviour 
 {
     public Connection.ConnectionType bodyPartType;

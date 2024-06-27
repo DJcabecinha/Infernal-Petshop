@@ -26,6 +26,11 @@ public class MainBody : MonoBehaviour
             bodyValue += part.myValue * 2;
         }
 
+        if(part.bodyPartType == ConnectionType.head)
+        {
+            soundToMake = part.animalType;
+        }
+
         PlaySFX();
     }
     public void Remove(BodyPart part)
@@ -60,6 +65,10 @@ public class MainBody : MonoBehaviour
             else if (soundToMake == AnimalType.reptile)
             {
                 AudioManager.instance.PlaySFX("Reptile", myAudioSource);
+            }
+            else if (soundToMake == AnimalType.dog)
+            {
+                AudioManager.instance.PlaySFX("Dog", myAudioSource);
             }
         }
     }
