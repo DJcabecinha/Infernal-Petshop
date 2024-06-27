@@ -21,6 +21,7 @@ public class Connection : MonoBehaviour
         cat,
         reptile,
         dog,
+        bird
     }
     public AnimalType animalType;
 

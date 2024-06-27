@@ -61,7 +61,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8b1aa645f1ef7eb4caa67be3acd39eac,
         type: 3}
       propertyPath: m_Name
-      value: Perna Frontal Esquerda Lagarto
+      value: Perna Frontal Esquerda de Lagarto
       objectReference: {fileID: 0}
     - target: {fileID: 1067126293904096834, guid: 8b1aa645f1ef7eb4caa67be3acd39eac,
         type: 3}
@@ -140,11 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyPartType: 0
-  myConnection: {fileID: 0}
   animalType: 1
-  characterJoint: {fileID: 0}
   myValue: 50
-  selected: 0
 --- !u!54 &158894174362730102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -154,8 +151,8 @@ Rigidbody:
   m_GameObject: {fileID: 2981901158467072098}
   serializedVersion: 4
   m_Mass: 1.25
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -409,8 +406,8 @@ Rigidbody:
   m_GameObject: {fileID: 5448996256801684924}
   serializedVersion: 4
   m_Mass: 1.25
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 0.5
+  m_AngularDrag: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
