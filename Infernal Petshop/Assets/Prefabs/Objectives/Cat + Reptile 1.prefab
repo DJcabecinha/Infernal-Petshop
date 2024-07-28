@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2019269347915772859}
   - component: {fileID: -6940908842649881701}
   m_Layer: 0
-  m_Name: Cat + Reptile
+  m_Name: Cat + Reptile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9af82fc1b96e649ad7500983f62b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: "Crie um Gato-R\xE9ptil-Cachorro"
-  firstType: 0
-  secondType: 1
-  thirdType: 2
+  description: "Crie um Cachorro-Gato-P\xE1ssaro"
+  firstType: 2
+  secondType: 0
+  thirdType: 3

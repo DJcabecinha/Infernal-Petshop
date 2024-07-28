@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyPartType: 0
   animalType: 2
-  myValue: 75
+  myValue: 50
 --- !u!136 &722727437622509138
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -179,8 +179,8 @@ Rigidbody:
   m_GameObject: {fileID: 1702528188969294582}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8128035948134446085}
         m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
         m_MethodName: Selected
         m_Mode: 6
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8128035948134446085}
         m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
         m_MethodName: Selected
         m_Mode: 6
@@ -388,8 +388,8 @@ Rigidbody:
   m_GameObject: {fileID: 3127081115844548964}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 1
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}

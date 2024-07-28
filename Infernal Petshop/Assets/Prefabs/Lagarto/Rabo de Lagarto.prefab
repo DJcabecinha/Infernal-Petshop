@@ -246,8 +246,8 @@ Rigidbody:
   m_GameObject: {fileID: 1489346957966206891}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -348,8 +348,8 @@ Rigidbody:
   m_GameObject: {fileID: 1729377659123855826}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -450,8 +450,8 @@ Rigidbody:
   m_GameObject: {fileID: 2093415330896085481}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -567,8 +567,8 @@ Rigidbody:
   m_GameObject: {fileID: 2633213471958952976}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -635,10 +635,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 623867608704735817}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 623867608704735817}
+        m_TargetAssemblyTypeName: BodyPart, Assembly-CSharp
+        m_MethodName: Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -775,8 +799,8 @@ Rigidbody:
   m_GameObject: {fileID: 4099326746353876505}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -877,8 +901,8 @@ Rigidbody:
   m_GameObject: {fileID: 4141571852154096572}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -979,8 +1003,8 @@ Rigidbody:
   m_GameObject: {fileID: 7004227479766693078}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1081,8 +1105,8 @@ Rigidbody:
   m_GameObject: {fileID: 7143049915865841302}
   serializedVersion: 4
   m_Mass: 0.01
-  m_Drag: 0.5
-  m_AngularDrag: 0.5
+  m_Drag: 10
+  m_AngularDrag: 10
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}

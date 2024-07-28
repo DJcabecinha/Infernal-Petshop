@@ -7,6 +7,7 @@ public class MainBody : MonoBehaviour
 {
     public int bodyValue;
 
+    public AnimalType myType;
     private List<AnimalType> presentAnimals = new List<AnimalType>();
     private List<ConnectionType> presentParts = new List<ConnectionType>();
 
@@ -16,6 +17,7 @@ public class MainBody : MonoBehaviour
     private void Start()
     {
         myAudioSource = GetComponent<AudioSource>();
+        presentAnimals.Add(myType);
     }
     public void Add(BodyPart part)
     {
@@ -23,8 +25,9 @@ public class MainBody : MonoBehaviour
         if (!presentParts.Contains(part.bodyPartType))
         {
             presentParts.Add(part.bodyPartType);
-            bodyValue += part.myValue * 2;
+           
         }
+        bodyValue += part.myValue * 2;
 
         if(part.bodyPartType == ConnectionType.head)
         {
@@ -39,9 +42,9 @@ public class MainBody : MonoBehaviour
         if (presentParts.Contains(part.bodyPartType))
         {
             presentParts.Remove(part.bodyPartType);
-            bodyValue -= part.myValue * 2;
+            
         }
-
+        bodyValue -= part.myValue * 2;
         PlaySFX();
     }
  
@@ -69,6 +72,10 @@ public class MainBody : MonoBehaviour
             else if (soundToMake == AnimalType.dog)
             {
                 AudioManager.instance.PlaySFX("Dog", myAudioSource);
+            }
+            else if (soundToMake == AnimalType.bird)
+            {
+                AudioManager.instance.PlaySFX("Bird", myAudioSource);
             }
         }
     }
